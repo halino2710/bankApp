@@ -95,7 +95,6 @@ def change_password():
                 else:
                     print("Pin does not match")
                     break
-
         else:
             print("Pin entered does not match current pin.")
 
