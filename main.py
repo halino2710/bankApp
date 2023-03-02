@@ -53,11 +53,11 @@ def main():
         user_input = input()
         print()
 
-
+# Display currently available balance
 def check_balance():
     print(f"\nYour account balance is {balance} SLL\n")
 
-
+# Widthdrawal function block
 def withdraw():
     global balance
     withdraw_amount = float(input("Amount you wish to withdraw: "))
@@ -69,7 +69,7 @@ def withdraw():
         print(f"Your new account balance is {new_balance} SLL")
         balance = new_balance
 
-
+# Deposit function block
 def deposit():
     global balance
     deposit_amount = float(input("Deposit amount: "))
@@ -77,7 +77,7 @@ def deposit():
     balance = balance + deposit_amount
     print(f"Your new account balance is: {balance}")
 
-
+# Password changing function block
 def change_password():
     while pin_entered != 'q':
         global user_pin
